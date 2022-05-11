@@ -1,0 +1,17 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<h1>total: {{ totalCount }}</h1>
+
+<h2>List of Dogs:</h2>
+<ul *ngFor="let dog of dogList">
+  <li setAtribut ngDefaultControl [appHighlight]="dog.name">
+    {{ dog.name | transformTask: '!' }}
+  </li>
+</ul>
+
+<first-component></first-component>
+
+<second-component></second-component>
+
+<third-component> </third-component>
